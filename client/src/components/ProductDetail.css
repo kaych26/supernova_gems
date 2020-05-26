@@ -1,0 +1,128 @@
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 400px 30px 400px 1fr;
+  grid-template-rows: 30px 400px 30px;
+  grid-template-areas:
+    ". . . . ."
+    ". i . d ."
+    ". . . . .";
+}
+
+.detail-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.6;
+  grid-area: d;
+}
+
+.detail-name,
+.detail-price,
+.detail-description,
+.detail-type-collection {
+  color: white;
+}
+
+.detail-name {
+  font-size: 44px;
+  letter-spacing: 1px;
+}
+
+.detail-price {
+  font-size: 28px;
+  color: white;
+}
+
+.detail-description {
+  padding: 0;
+  letter-spacing: 0.9px;
+}
+
+.product-detail-image-div {
+  width: 400px;
+  grid-area: i;
+  background-color: white;
+}
+
+.product-detail-image {
+  width: 100%;
+}
+
+.detail-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-button-container-hide {
+  display: none;
+}
+
+.detail-edit-button,
+.detail-delete-button {
+  font-size: 22px;
+  width: 199px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 50px;
+  background-color: #92dbe5;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.detail-delete-button:hover {
+  background-color: #da7380;
+}
+
+.detail-edit-link {
+  color: black;
+}
+
+@media (max-width: 830px) {
+  .detail-name {
+    font-size: 34px;
+    letter-spacing: 1px;
+  }
+  .product-detail {
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-rows: 30px 400px 30px 400px 30px;
+    grid-template-areas:
+      ". . ."
+      ". i ."
+      ". . ."
+      ". d ."
+      ". . .";
+  }
+}
+
+@media (max-width: 400px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px auto 30px auto 30px;
+    grid-template-areas:
+      "."
+      "i"
+      "."
+      "d"
+      ".";
+  }
+
+  .product-detail-image-div {
+    height: 100%;
+    width: 100%;
+  }
+
+  .product-detail-image {
+    width: 100%;
+  }
+
+  .detail-edit-button,
+  .detail-delete-button {
+    width: 100vw;
+  }
+
+  .detail-button-container {
+    height: 102px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

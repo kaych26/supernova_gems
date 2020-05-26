@@ -1,0 +1,134 @@
+.create-form {
+  padding: 0;
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-rows: 30px 86px 24px 270px 24px 24px 24px 24px 50px 60px;
+  row-gap: 2px;
+  grid-template-areas:
+    ". . ."
+    ". n ."
+    ". p ."
+    ". d ."
+    ". i ."
+    ". t ."
+    ". c ."
+    ". f ."
+    ". s ."
+    ". . .";
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.create-input-name,
+.create-input-price,
+.create-textarea-description,
+.create-input-image-link {
+  color: white;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 48px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.create-input-name::placeholder,
+.create-input-price::placeholder,
+.create-textarea-description::placeholder,
+.create-input-image-link::placeholder,
+.create-input-name::-ms-input-placeholder,
+.create-input-price::-ms-input-placeholder,
+.create-textarea-description::-ms-input-placeholder,
+.create-input-image-link::-ms-input-placeholder {
+  color: white;
+}
+
+.create-textarea-description {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: d;
+}
+
+.create-input-name {
+  width: 100%;
+  padding: 0;
+  font-size: 48px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  grid-area: n;
+}
+
+.create-input-price {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: p;
+}
+
+.create-input-image-link {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: i;
+}
+
+.create-jtype-dropdown,
+.create-jcollection-dropdown,
+.create-featured-dropdown {
+  background-color: #747474;
+  color: white;
+}
+
+.create-jtype-dropdown {
+  grid-area: t;
+}
+
+.create-jcollection-dropdown {
+  grid-area: c;
+}
+.create-featured-dropdown {
+  grid-area: f;
+}
+
+.create-submit-button {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50px;
+  background-color: #92dbe5;
+  color: black;
+  border: none;
+  cursor: pointer;
+  grid-area: s;
+  border-radius: 7px;
+}
+
+@media (max-width: 400px) {
+  .create-form {
+    grid-template-columns: 3px 1fr 3px;
+    grid-template-rows: 90px 30px 270px 24px 24px 24px 24px 50px 30px;
+    grid-template-areas:
+      ". n ."
+      ". p ."
+      ". d ."
+      ". i ."
+      ". t ."
+      ". c ."
+      ". f ."
+      ". s ."
+      ". . .";
+  }
+
+  .create-input-name,
+  .create-input-price,
+  .create-textarea-description,
+  .create-input-image-link {
+    font-size: 28px;
+  }
+}

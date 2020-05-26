@@ -1,0 +1,163 @@
+.gridHeadingDivider,
+.featuredDivider {
+  background-color: black;
+  margin-top: -250px;
+  /* padding: 50px; */
+  display: block;
+  padding-bottom: 20px;
+}
+
+.textDivider,
+.featuredDividerdiv {
+  font-family: kazimir, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 8vw;
+  text-align: center;
+  color: white;
+  padding-top: 390px;
+}
+
+.textDividertag,
+.featuredDividertag {
+  background-color: #92dce5;
+  padding: 0px 65px 0 20px;
+  margin-left: 300px;
+  font-family: kazimir, sans-serif;
+  font-weight: 450;
+  font-style: italic;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.featuredDividerdiv {
+  font-size: 5vw;
+}
+
+.blueSection {
+  background-color: #92dce5;
+  height: 650px;
+}
+
+.blueSection-head {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 450;
+  font-style: bold;
+  font-size: 5vw;
+  text-align: center;
+  /* width: 75%; */
+  margin: auto;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+
+.blueSection-text {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 450;
+  /* font-style: italic; */
+  font-size: 3.5vw;
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  padding-top: 75px;
+  text-transform: none;
+  line-height: 65px;
+}
+
+/* .quarantineSection {
+  background-color: white;
+  height: 350px;
+  width: 950px;
+  margin: auto;
+  margin-top: -150px;
+} */
+
+.quarantineSection-text {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 450;
+  font-style: italic;
+  font-size: 4vw;
+  text-align: center;
+  padding: 40px 0 50px;
+  font-weight: 800;
+  background-color: white;
+  height: 25vw;
+  width: 70vw;
+  margin: auto;
+  /* padding: 40px 20px; */
+  line-height: 80px;
+  /* text-transform: uppercase; */
+}
+
+.quarantine-img {
+  width: 100vw;
+}
+
+@media (max-width: 900px) {
+  .blueSection-head {
+    font-size: 45px;
+  }
+
+  .blueSection-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  .gridHeadingDivider {
+    background-color: black;
+    margin-top: 20px;
+    padding: 0;
+    height: 40px;
+  }
+
+  .textDivider,
+  .featuredDividerdiv {
+    padding: 0;
+  }
+
+  .textDividertag {
+    visibility: hidden;
+  }
+  .quarantine-img {
+    width: 100vw;
+    padding-top: 5px;
+  }
+
+  .featuredDivider {
+    background-color: black;
+    margin-top: 10px;
+  }
+
+  .featuredDividerdiv {
+    font-size: 20px;
+    width: 350px;
+    padding-left: 30px;
+  }
+  .featuredDividertag {
+    background-color: #92dce5;
+    font-family: kazimir, sans-serif;
+    font-weight: 450;
+    font-style: italic;
+    font-size: 20px;
+    padding: 0 10px;
+    margin-left: 100px;
+  }
+
+  .blueSection {
+    display: none;
+  }
+
+  .quarantineSection {
+    margin-top: -550px;
+    height: 0px;
+    display: none;
+  }
+  .featured-products-grid {
+    margin-top: 30px;
+  }
+
+  .engagement-section {
+    margin-top: 50px;
+  }
+}

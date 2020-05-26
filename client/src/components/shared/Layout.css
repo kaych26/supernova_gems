@@ -1,0 +1,33 @@
+.layout {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.layout-children {
+  flex: 2;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 190px 0 0;
+}
+
+@media (max-width: 500px) {
+  .layout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .layout-children {
+    width: 100%;
+    /* flex: 4; */
+    padding: 190px 0 0;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 100px; */
+  }
+}

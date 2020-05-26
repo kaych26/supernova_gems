@@ -1,0 +1,85 @@
+.leftTitlePositionC {
+  font-size: larger;
+}
+
+.heroImgC {
+  max-width: 100%;
+  display: inline;
+  grid-area: i;
+}
+
+.heroBlockC {
+  display: grid;
+  position: relative;
+  background-color: white;
+  outline: 1px solid black;
+  outline-offset: -20px;
+  /* width: 665px;
+  height: 250px; */
+  /* top: -850px;
+  right: -820px; */
+  text-align: center;
+  border: 1px solid black;
+  grid-area: c;
+  grid-column: 4 / span 3;
+  grid-row: 2 / span 2;
+}
+
+.heroTitleC {
+  position: absolute;
+  /* top: 30px;
+  right: 20px; */
+  font-family: kazimir, sans-serif;
+  /* font-size: 48px; */
+  font-size: 4vw;
+  font-style: italic;
+  padding: 10% 20%;
+  /* width: 380px; */
+  /* border: #36413e solid 1px; */
+  /* outline: solid 1px #36413e; */
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+.rightTitlePosition {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i";
+}
+
+@media (max-width: 550px) {
+  .heroBlockC {
+    display: grid;
+    position: relative;
+    background-color: white;
+    outline: 1px solid black;
+    outline-offset: -10px;
+    text-align: center;
+    border: 1px solid black;
+    grid-area: c;
+    grid-column: 4 / span 3;
+    grid-row: 2 / span 2;
+  }
+  .heroTitleC {
+    position: absolute;
+    font-family: kazimir, sans-serif;
+    font-size: 4vw;
+    font-style: italic;
+    padding: 10% 20%;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+  }
+}

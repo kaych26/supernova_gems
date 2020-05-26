@@ -1,0 +1,99 @@
+/* <div className="form-container">
+        <div className=="form-img" />
+        <form onSubmit={this.onSignUp}>
+          <div className="form-user-info">
+            <label>Username</label>
+            <label>Email address</label>       
+            <label>Password</label>        
+            <label>Password Confirmation</label>
+        </form> */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  background-color: #92dce5;
+  text-transform: uppercase;
+  width: 300px;
+  height: 50px;
+}
+
+.form-container {
+  position: relative;
+  background-image: url(https://i.imgur.com/kPaL9MF.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-self: center;
+  width: 400px;
+  /* height: 105vh; */
+  margin: 4em auto;
+  border: 2px solid #b0bec5;
+  border-radius: 6px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 2s ease;
+  font-family: brandon-grotesque, sans-serif;
+  text-transform: uppercase;
+  display: grid;
+
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . ."
+    ". f ."
+    ". . .";
+}
+
+.form-user-info {
+  margin: 0;
+
+  background-color: white;
+  height: fit-content;
+
+  grid-area: f;
+
+  width: 100%;
+  height: 100%;
+}
+
+.form-container form {
+  padding: 20px 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+}
+
+.form-container form input {
+  width: 100%;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.4em;
+  font-size: 1.5rem;
+  border: 2px solid #e0e0e0;
+  transition: all 0.4s ease;
+}
+
+.form-user-info label {
+  align-self: start;
+}
+
+@media (max-width: 400px) {
+  .form-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "."
+      "f"
+      ".";
+  }
+}

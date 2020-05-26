@@ -1,0 +1,104 @@
+.heroSection-leftTitlePosition {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i";
+}
+
+.heroImg {
+  max-width: 100%;
+  display: inline;
+  grid-area: i;
+}
+
+.heroBlock {
+  display: grid;
+  position: relative;
+  background-color: white;
+  outline: 1px solid black;
+  outline-offset: -20px;
+  border: white 2px solid;
+
+  text-align: center;
+  border: 1px solid black;
+  grid-area: c;
+  grid-column: 2 / span 3;
+  grid-row: 4 / span 2;
+}
+.heroTitle {
+  position: absolute;
+  font-family: kazimir, sans-serif;
+  font-size: 4.5vw;
+  font-style: italic;
+  display: grid;
+  justify-self: center;
+
+  top: 25%;
+}
+
+.heroTitle2 {
+  position: absolute;
+  top: 60%;
+
+  font-family: kazimir, sans-serif;
+  font-size: 2vw;
+  justify-self: center;
+}
+
+@media (max-width: 400px) {
+  /* .heroSection {
+    width: 400px;
+    margin-top: -20px;
+    margin-bottom: 90px;
+  } */
+
+  /* .heroBlock {
+    top: -160px;
+
+    position: relative;
+    background-color: white;
+    width: 210px;
+    height: 95px;
+    left: 50px;
+  } */
+
+  /* .heroImg {
+    display: grid;
+    grid-area: i;
+    height: 500px;
+  } */
+
+  .heroBlock {
+    display: grid;
+    position: relative;
+    background-color: white;
+    outline: 1px solid black;
+    outline-offset: -10px;
+    text-align: center;
+    border: 1px solid black;
+    grid-area: c;
+    grid-column: 2 / span 3;
+    grid-row: 4 / span 2;
+  }
+  .heroTitle {
+    position: absolute;
+    font-family: kazimir, sans-serif;
+    font-size: 2.5vw;
+    font-style: italic;
+    padding: 5% 5%;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+  }
+}
